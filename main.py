@@ -24,7 +24,6 @@ def on_press(key):
     word += str(key).replace("'", "")
 
 def on_release(key):
-    print(word_dict)
     if key == Key.f1:
         f = open(str(datetime.now())+".txt", "w+")
         for word in word_dict:
