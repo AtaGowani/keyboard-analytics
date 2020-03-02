@@ -18,7 +18,10 @@ def on_press(key):
         word = ""
         return
     elif key == Key.backspace:
-        word = ""
+        if word != "":
+            word = word[0:len(word)-1]
+        else:
+            word = ""
         return
 
     word += str(key).replace("'", "")
