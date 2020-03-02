@@ -1,2 +1,3 @@
 *.txt
 nohup.out
+.DS_Store
